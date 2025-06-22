@@ -14,11 +14,11 @@ include 'function/modal/edit_user_modal.php';
         <i class="fas fa-arrow-left"></i> <!-- Ikon Arrow Left -->
     </button>
 
-    <h4>Kerjaan Aset Tetap</h4>
+    <h4>Kerjaan TO-DO LIST</h4>
     <hr>
     
-    <a href="../../../kerjaan_aset/index.php" class="btn btn-primary mb-4 btn-lg">Dashboard</a>
-    <a href="../../../kerjaan_aset/page_tambah_kerjaan.php" class="btn btn-primary">Tambah Kerjaan</a>
+    <a href="../../../kerjaan_todolist/index.php" class="btn btn-primary mb-4 btn-lg">Dashboard</a>
+    <a href="../../../kerjaan_todolist/page_tambah_kerjaan.php" class="btn btn-primary">Tambah Kerjaan</a>
 
     <!-- Dynamically Generated Buttons -->
     <?php

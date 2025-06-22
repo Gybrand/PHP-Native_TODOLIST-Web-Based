@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 ?>
 
@@ -9,7 +9,7 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="3600">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="image/pelin.png">
+    <link rel="icon" href="image/web.png">
     <title>Tabel Pekerjaan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/sdbarr.css">
@@ -26,8 +26,7 @@ session_start();
             <button type="button" id="toggleSidebar" class="btn btn-primary me-2">
                 <i class="fas fa-bars"></i>
             </button>
-            <p class="badge bg-primary text-wrap fw-bold me-2 text fs-5" style="height: 2.3rem;">Dashboard Kerjaan Aset
-                Tetap
+            <p class="badge bg-primary text-wrap fw-bold me-2 text fs-5" style="height: 2.3rem;">Dashboard Kerjaan TO-DO List
             </p>
         </div>
 
@@ -45,28 +44,28 @@ session_start();
 </html>
 
 <script>
-function toggleSidebar() {
-    const sidebar = document.getElementById("sidebar");
-    const content = document.getElementById("content");
-    const toggleSidebarBtn = document.getElementById("toggleSidebar");
-    const closeSidebarBtn = document.getElementById("closeSidebar");
+    function toggleSidebar() {
+        const sidebar = document.getElementById("sidebar");
+        const content = document.getElementById("content");
+        const toggleSidebarBtn = document.getElementById("toggleSidebar");
+        const closeSidebarBtn = document.getElementById("closeSidebar");
 
-    // Toggle sidebar visibility
-    if (sidebar.style.display === "none" || sidebar.style.display === "") {
-        sidebar.style.display = "block"; // Show sidebar
-        content.classList.add("sidebar-active"); // Shift content to the right
-        toggleSidebarBtn.style.display = "block"; // Hide the toggle button when the sidebar is open
-        closeSidebarBtn.style.display = "none"; // Show the close button (arrow-left)
-    } else {
-        sidebar.style.display = "none"; // Hide sidebar
-        content.classList.remove("sidebar-active"); // Reset content margin
-        toggleSidebarBtn.style.display = "block"; // Show the toggle button again
-        closeSidebarBtn.style.display = "none"; // Hide the close button (arrow-left)
+        // Toggle sidebar visibility
+        if (sidebar.style.display === "none" || sidebar.style.display === "") {
+            sidebar.style.display = "block"; // Show sidebar
+            content.classList.add("sidebar-active"); // Shift content to the right
+            toggleSidebarBtn.style.display = "block"; // Hide the toggle button when the sidebar is open
+            closeSidebarBtn.style.display = "none"; // Show the close button (arrow-left)
+        } else {
+            sidebar.style.display = "none"; // Hide sidebar
+            content.classList.remove("sidebar-active"); // Reset content margin
+            toggleSidebarBtn.style.display = "block"; // Show the toggle button again
+            closeSidebarBtn.style.display = "none"; // Hide the close button (arrow-left)
+        }
     }
-}
 
-// Event listener for the toggle button
-document.getElementById('toggleSidebar').addEventListener('click', toggleSidebar);
-document.getElementById('closeSidebar').addEventListener('click',
-    toggleSidebar); // Event listener for the arrow-left button
+    // Event listener for the toggle button
+    document.getElementById('toggleSidebar').addEventListener('click', toggleSidebar);
+    document.getElementById('closeSidebar').addEventListener('click',
+        toggleSidebar); // Event listener for the arrow-left button
 </script>
